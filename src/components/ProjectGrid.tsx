@@ -36,11 +36,11 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
               {project.technologies.join(" · ")}
             </div>
           </div>
-          <div className="flex gap-4 overflow-x-auto flex-grow">
+          <div className="flex gap-4 overflow-x-auto flex-grow ">
             {project.media.map((media, index) => (
               <div
                 key={index}
-                className="flex relative group h-[200px] min-w-[355px] flex-shrink-0"
+                className="flex relative group h-[200px] w-[355px] items-start"
               >
                 {media.type === "video" ? (
                   <iframe
