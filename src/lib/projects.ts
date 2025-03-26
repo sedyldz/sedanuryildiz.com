@@ -7,10 +7,6 @@ export const projects = [
     description:
       "Intelligent database assessment tool that helps database administrators detect, identify and solve anomalies.",
     media: [
-      /*     {
-        type: "video" as const,
-        url: "https://drive.google.com/file/d/1UctyAm2vIxwCj4PtJs6KFXxOIgjfEnSx/view",
-      }, */
       {
         type: "image" as const,
         url: "/projects/percona-1.png",
@@ -23,6 +19,10 @@ export const projects = [
         type: "image" as const,
         url: "/projects/percona-3.png",
       },
+      {
+        type: "youtube" as const,
+        url: "https://www.youtube.com/embed/vGZi8T0DZ9U?autoplay=1&controls=0&fs=0&mute=1",
+      }, 
     ],
     technologies: [
       "Shadcn-ui",
@@ -47,22 +47,23 @@ export const projects = [
     url: "https://www.knowy.ai/",
     year: "2023",
     media: [
-      /*  {
-        type: "video" as const,
-        url: "https://drive.google.com/file/d/1ydwK1y_EF_HK1FeB4hg7txOVSbcup8qU/view?resourcekey&usp=slides_web",
+      {
+        type: "youtube" as const,
+        url: "https://www.youtube.com/embed/LiFnmC3GLx0?autoplay=1&controls=0&fs=0&mute=1&loop=1&playlist=LiFnmC3GLx0"
       },
       {
-        type: "video" as const,
-        url: "https://drive.google.com/file/d/19qnylRIc52y91xeu_w8-HaQEhzmn73pg/view?resourcekey",
+        type: "youtube" as const,
+        url: "https://www.youtube.com/embed/1ei4vSC7CHI?autoplay=1&controls=0&fs=0&mute=1&loop=1&playlist=1ei4vSC7CHI"
       },
       {
-        type: "video" as const,
-        url: "https://drive.google.com/file/d/1vY8P4od7Aw-dLrn-aUGy6DQgy8gGlNq0/view?resourcekey",
-      }, */
+        type: "youtube" as const,
+        url: "https://www.youtube.com/embed/tjU-3k0Otd8?autoplay=1&controls=0&fs=0&mute=1&loop=1&playlist=tjU-3k0Otd8"
+      }
     ],
+    
     technologies: [
       "Generative AI",
-      "Typescript",
+      "Typescript", 
       "Preact",
       "TailwindCSS",
       "PostgreSQL",
@@ -81,10 +82,6 @@ export const projects = [
     description: "Web based platform to match consultants with companies",
     url: "https://ddx.tubitak.gov.tr/auth/login",
     media: [
-      /*    {
-        type: "video" as const,
-        url: "https://drive.google.com/file/d/1WnTLD3RvKw81k_yg4qWJcs4r7uNjQjlC/view",
-      }, */
       {
         type: "image" as const,
         url: "/projects/ddx-1.png",
@@ -93,6 +90,10 @@ export const projects = [
         type: "image" as const,
         url: "/projects/ddx-2.png",
       },
+      {
+        type: "youtube" as const,
+        url: "https://www.youtube.com/embed/AqVxx2G98ZQ?autoplay=1&controls=0&fs=0&mute=1&loop=1&playlist=AqVxx2G98ZQ"
+      }
     ],
     technologies: [
       "Typescript",
@@ -116,10 +117,6 @@ export const projects = [
       "Custom Flexible Component Renderer with Dynamic Article & Issue Templates",
     url: "https://212-magazine.com",
     media: [
-      /*      {
-        type: "video" as const,
-        url: "https://drive.google.com/file/d/1hGKpBNXIg_jDenrpe5d85-1nWofbYval/view?resourcekey",
-      }, */
       {
         type: "image" as const,
         url: "/projects/212-1.png",
@@ -128,6 +125,10 @@ export const projects = [
         type: "image" as const,
         url: "/projects/212-2.png",
       },
+      {
+        type: "youtube" as const,
+        url: "https://www.youtube.com/embed/iiA2JJfIcoQ?autoplay=1&controls=0&fs=0&mute=1&loop=1&playlist=iiA2JJfIcoQ"
+      }
     ],
     technologies: [
       "Gatsby Js",
@@ -142,21 +143,21 @@ export const projects = [
   },
   {
     id: "05",
-    title: "Tio Base",
+    title: "Biscuit",
     category: "Web Application, SAAS",
     year: "2016-Present",
     description:
       "SAAS management tool for D2Cs 240 Derece - Sourdough bread brand Shambhala Barcelona - Yoga clothing brand Zero Books - Bookstore · Pollion - Translation service Grandma - Bakery · Radyancı - Spare parts Yıka gel - Pickup laundry service",
     url: "https://tio.ist",
     media: [
-      /*   {
-        type: "video" as const,
-        url: "https://drive.google.com/file/d/15TJPie0eeDxnfL-7fMkbwUQ0b7sKjMLj/view?resourcekey",
-      },
-      {
-        type: "video" as const,
-        url: "https://drive.google.com/file/d/1QKsUTFFqWr8lLZGqwRryVN86UiRfdTpm/view?resourcekey",
-      }, */
+     {
+      type: "youtube" as const,
+      url: "https://www.youtube.com/embed/XbYxoReRZNg?autoplay=1&controls=0&fs=0&mute=1&loop=1&playlist=XbYxoReRZNg"
+     },
+     {
+      type: "youtube" as const,
+      url: "https://www.youtube.com/embed/cRWJFGqbW4U?autoplay=1&controls=0&fs=0&mute=1&loop=1&playlist=cRWJFGqbW4U"
+     }
     ],
     technologies: [
       "Next.js",

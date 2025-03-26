@@ -7,7 +7,7 @@ type Project = {
   category: string;
   description: string;
   year: string;
-  media: { type: "video" | "image"; url: string }[]; // Changed from single object to array
+  media: { type: "video" | "image" | "youtube"; url: string }[]; 
   technologies: string[];
   url?: string;
   github?: string;
@@ -36,20 +36,26 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
               {project.technologies.join(" · ")}
             </div>
           </div>
-          <div className="flex gap-4 overflow-x-auto flex-grow ">
+          <div className="flex flex-col md:flex-row gap-4 overflow-x-auto flex-grow ">
             {project.media.map((media, index) => (
               <div
                 key={index}
                 className="flex relative group h-[200px] w-[355px] items-start"
               >
-                {media.type === "video" ? (
+                { media.type === "youtube" ? (
+                   <iframe
+                   className="h-full w-full object-cover"
+                   src={media.url}
+                   allow="autoplay; encrypted-media" allowFullScreen                
+                 />
+                ) : media.type === "video" ? (
                   <iframe
                     className="h-full w-full object-cover"
                     src={getGoogleDriveEmbedUrl(media.url)}
                     allow="autoplay"
                     allowFullScreen
                   />
-                ) : (
+                ): (
                   <LazyLoadImage
                     className="h-full w-full object-contain"
                     src={media.url}
