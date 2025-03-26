@@ -9,7 +9,7 @@ export function Header() {
         </a>
         <div className="hidden md:block max-w-sm">
           <div>
-            A design and front-end sorcerer, obsessed with crafting smooth,
+            A full stack developer and designer, obsessed with crafting smooth,
             seamless experiences that make complex technology effortlessly
             accessible.
           </div>
