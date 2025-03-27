@@ -28,8 +28,8 @@ export function Header() {
               href={item.href}
               className={`transition-colors ${
                 currentPath === item.href
-                  ? "text-neutral-900"
-                  : "text-neutral-400 hover:text-neutral-200"
+                  ? "text-neutral-400"
+                  : "text-neutral-900 hover:text-neutral-400"
               }`}
             >
               {item.name}

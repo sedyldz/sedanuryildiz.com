@@ -6,7 +6,7 @@ lastModified: "2024-03-21"
 slug: "host-react-aws"
 author:
   name: "Sedanur Yıldız"
-  image: "/images/author.jpg"
+  image: "/seda.jpg"
 keywords:
   - AWS
   - React
