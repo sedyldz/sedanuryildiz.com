@@ -1,7 +1,7 @@
 ---
 title: "Host Your React Website on AWS for (Almost) Free"
 description: "A step-by-step guide to hosting a Vite + React website on AWS S3 and CloudFront"
-date: "2024-03-21"
+date: "2024-03-27"
 lastModified: "2024-03-21"
 slug: "host-react-aws"
 author:

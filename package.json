@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "deploy": "vite build && aws s3 sync dist/ s3://sedanuryildiz.tio.ist --delete",
     "invalidate-cache": "aws cloudfront create-invalidation --distribution-id EKSOT6VKJ96OT --paths \"/*\"",
-    "generate-sitemap": "tsx scripts/generate-sitemap.ts"
+    "generate-sitemap": "tsx scripts/generate-sitemap.ts",
+    "ship": "npm run build && npm run deploy && npm run invalidate-cache"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
