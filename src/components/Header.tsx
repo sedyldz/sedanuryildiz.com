@@ -1,6 +1,12 @@
 export function Header() {
   const currentPath = window.location.pathname;
 
+  const navigationItems = [
+    { name: "About", href: "/about" },
+    { name: "Work", href: "/" },
+    { name: "Blog", href: "/blog" },
+  ];
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50">
       <div className="flex justify-between items-start px-6 py-4 text-sm">
@@ -16,26 +22,19 @@ export function Header() {
         </div>
         <div>sedanuryildiz23@gmail.com</div>
         <nav className="flex gap-4">
-          <a
-            href="/about"
-            className={`transition-colors ${
-              currentPath === "/about"
-                ? "text-neutral-900"
-                : "text-neutral-400 hover:text-neutral-200"
-            }`}
-          >
-            About
-          </a>
-          <a
-            href="/"
-            className={`transition-colors ${
-              currentPath === "/"
-                ? "text-neutral-900"
-                : "text-neutral-400 hover:text-neutral-200"
-            }`}
-          >
-            Work
-          </a>
+          {navigationItems.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className={`transition-colors ${
+                currentPath === item.href
+                  ? "text-neutral-900"
+                  : "text-neutral-400 hover:text-neutral-200"
+              }`}
+            >
+              {item.name}
+            </a>
+          ))}
         </nav>
       </div>
     </header>

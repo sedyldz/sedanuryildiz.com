@@ -5,23 +5,30 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && tsx scripts/generate-sitemap.ts && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "vite build && aws s3 sync dist/ s3://sedanuryildiz.tio.ist --delete"
+    "deploy": "vite build && aws s3 sync dist/ s3://sedanuryildiz.tio.ist --delete",
+    "invalidate-cache": "aws cloudfront create-invalidation --distribution-id EKSOT6VKJ96OT --paths \"/*\""
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "front-matter": "^4.0.2",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.474.0",
+    "marked": "^15.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lazy-load-image-component": "^1.6.3",
+    "react-markdown": "^9.0.1",
     "react-router-dom": "^7.1.5",
+    "remark-gfm": "^4.0.0",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
