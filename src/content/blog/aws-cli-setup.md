@@ -1,6 +1,6 @@
 ---
 title: "Setting Up AWS CLI"
-description: "Safe and simple guide to install AWS CLI - perfect for careful developers"
+description: "A step-by-step guide to installing and configuring AWS CLI for secure cloud deployments"
 date: "2024-03-21"
 lastModified: "2024-03-21"
 slug: "aws"
