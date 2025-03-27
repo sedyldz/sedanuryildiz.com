@@ -56,8 +56,8 @@ The scripts do the following:
    - Scroll to "Static website hosting"
    - Click "Edit"
    - Enable "Static website hosting"
-   - Set "Index document" to `index.html`
-   - Set "Error document" to `index.html` (for SPA routing)
+   - Set "Index document" to 'index.html'
+   - Set "Error document" to 'index.html' (for SPA routing)
 
 3. Update bucket permissions:
    - Go to bucket "Permissions" tab

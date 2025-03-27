@@ -1,6 +1,5 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { SEO } from "../components/SEO";
 import { getBlogPost } from "../lib/blog";
 import { Header } from "../components/Header";
@@ -36,11 +35,11 @@ export default function BlogPost() {
           <article className="prose prose-neutral max-w-none">
             <div className="prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl 
                           prose-pre:bg-[#f6f8fa] prose-pre:border prose-pre:border-[#d0d7de] prose-pre:rounded-lg
-                          prose-pre:font-mono
+                          prose-pre:font-mono prose-pre:p-4
                           prose-code:text-[#24292f] prose-code:bg-[#f6f8fa] prose-code:rounded-md prose-code:px-1
                           prose-code:font-mono
                           prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+              <ReactMarkdown>{post.content}</ReactMarkdown>
             </div>
             <div className="flex items-center gap-4 mt-8 not-prose">
               <img 
