@@ -9,7 +9,7 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-white font-mono">
       <Header />
-      <SEO 
+      <SEO
         title="Blog"
         description="Technical articles and guides about web development, React, AWS, and more by Sedanur Yıldız."
       />
@@ -21,24 +21,44 @@ export default function Blog() {
             <span>POSTS</span>
           </div>
         </div>
+        <div className="px-6 py-8 border-b border-neutral-200">
+          <p className=" max-w-2xl text-sm">
+            I tend to forget a lot, so I'm storing here recipes for things I
+            often do while developing products from ground up. Every time I work
+            on something, I look for what's the latest best practice, most
+            logical, free and quick solution. Feel free to use and share - while
+            I generate a good part of it, I make sure to test and apply
+            everything myself to verify it works.
+          </p>
+        </div>
         <div className="p-6">
           <div className="grid gap-6">
             {posts.map((post) => (
-              <article key={post.slug} className="border border-gray-200 rounded-lg p-6">
+              <article
+                key={post.slug}
+                className="border border-gray-200 rounded-lg p-6"
+              >
                 <h2 className="text-2xl font-semibold mb-2">
-                  <Link to={`/blog/${post.slug}`} className="hover:text-blue-600">
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="hover:text-blue-600"
+                  >
                     {post.frontmatter.title}
                   </Link>
                 </h2>
                 <div className="flex items-center gap-2 mb-4">
-                  <img 
-                    src={post.frontmatter.author.image} 
+                  <img
+                    src={post.frontmatter.author.image}
                     alt={post.frontmatter.author.name}
                     className="w-6 h-6 rounded-full"
                   />
-                  <span className="text-sm text-gray-600">{post.frontmatter.author.name}</span>
+                  <span className="text-sm text-gray-600">
+                    {post.frontmatter.author.name}
+                  </span>
                   <span className="text-gray-300">•</span>
-                  <time className="text-sm text-gray-600">{post.frontmatter.date}</time>
+                  <time className="text-sm text-gray-600">
+                    {post.frontmatter.date}
+                  </time>
                 </div>
                 <p className="text-gray-600">{post.frontmatter.description}</p>
               </article>
@@ -48,4 +68,4 @@ export default function Blog() {
       </main>
     </div>
   );
-} 
+}

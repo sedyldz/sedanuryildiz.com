@@ -1,8 +1,8 @@
 ---
 title: "Setting Up AWS CLI"
 description: "A step-by-step guide to installing and configuring AWS CLI for secure cloud deployments"
-date: "2024-03-21"
-lastModified: "2024-03-21"
+date: "2025-03-21"
+lastModified: "2025-03-21"
 slug: "aws"
 author:
   name: "Sedanur Yıldız"
@@ -41,14 +41,17 @@ Before installing AWS CLI, you need to create access keys:
 > ⚠️ Never share or commit your access keys. They give direct access to your AWS account.
 
 ## What You Need
+
 - An **AWS account** (already set up)
 - **Terminal (Mac/Linux)** or **Command Prompt (Windows)**
 - **AWS Access Key ID & Secret Access Key** (created above)
 
 ## Step 1: Install AWS CLI
+
 First, let's install the AWS CLI tool on your machine.
 
 ### For Mac/Linux:
+
 Run the following commands:
 
 ```sh
@@ -58,11 +61,13 @@ sudo ./aws/install
 ```
 
 ### For Windows:
+
 1. Go to the [AWS CLI Download](https://aws.amazon.com/cli/).
 2. Download the **Windows** version.
 3. Follow the installation steps.
 
 ## Step 2: Configure AWS CLI
+
 Once it's installed, open your terminal or command prompt and run:
 
 ```sh
@@ -70,12 +75,14 @@ aws configure
 ```
 
 You'll be asked for:
+
 - **AWS Access Key ID** (you can find it in your AWS Console)
 - **AWS Secret Access Key**
 - **Default region name** (e.g., `us-west-2`)
 - **Default output format** (choose `json`)
 
 ## Step 3: Test Your Setup
+
 To confirm everything's working, try running this command:
 
 ```sh
@@ -85,9 +92,11 @@ aws s3 ls
 If it's all set up right, you'll see a list of your S3 buckets (or a blank result if you haven't created any yet).
 
 ## Step 4: Use AWS CLI for Deployments
+
 Now that AWS CLI is set up, you can use it to manage your AWS services directly from your terminal. Deploying a React app or managing your database becomes super easy.
 
 ### Example: Deploy to S3
+
 1. Build your React app: `npm run build`
 2. Deploy it to your S3 bucket with:
 
@@ -98,6 +107,7 @@ aws s3 sync build/ s3://your-bucket-name --delete
 This will upload your React app's build folder to S3.
 
 ## Conclusion
+
 Setting up AWS CLI is a simple and effective way to gain control over your AWS resources. It puts you in the driver's seat when deploying your apps—without worrying about the costs spiraling out of control.
 
 Now you're ready to deploy your side project with AWS, keeping everything simple and cost-effective. 🚀
