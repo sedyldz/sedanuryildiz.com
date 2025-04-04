@@ -3,8 +3,9 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-
+import { useAnalytics } from "./utils/analytics";
 function App() {
+  useAnalytics();
   return (
     <BrowserRouter>
       <Routes>
