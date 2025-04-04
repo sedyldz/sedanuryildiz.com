@@ -9,5 +9,23 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Initialize the agent on page load.
+      const fpPromise = import(
+        "https://fpjscdn.net/v3/NTestd4bQ87Wr0x1TS57"
+      ).then((FingerprintJS) =>
+        FingerprintJS.load({
+          region: "eu",
+        })
+      );
+
+      // Get the visitorId when you need it.
+      fpPromise
+        .then((fp) => fp.get())
+        .then((result) => {
+          const visitorId = result.visitorId;
+          console.log(visitorId);
+        });
+    </script>
   </body>
 </html>
