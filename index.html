@@ -12,9 +12,13 @@
     <script>
       // Initialize the agent on page load.
       const fpPromise = import(
-        "https://fpjscdn.net/v3/NTestd4bQ87Wr0x1TS57"
+        "https://metrics.sedanuryildiz.com/web/v3/NTestd4bQ87Wr0x1TS57"
       ).then((FingerprintJS) =>
         FingerprintJS.load({
+          endpoint: [
+            "https://metrics.sedanuryildiz.com",
+            FingerprintJS.defaultEndpoint,
+          ],
           region: "eu",
         })
       );
