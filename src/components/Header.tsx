@@ -20,7 +20,7 @@ export function Header() {
             accessible.
           </div>
         </div>
-        <div>sedanuryildiz23@gmail.com</div>
+        <div className="hidden md:block">sedanuryildiz23@gmail.com</div>
         <nav className="flex gap-4">
           {navigationItems.map((item) => (
             <a
