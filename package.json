@@ -14,6 +14,7 @@
     "ship": "npm run build && npm run deploy && npm run invalidate-cache"
   },
   "dependencies": {
+    "@fingerprintjs/fingerprintjs-pro-react": "^2.6.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "front-matter": "^4.0.2",
@@ -44,8 +45,8 @@
     "eslint-plugin-react-refresh": "^0.4.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.7.1",
     "typescript": "^5.5.3",
-    "vite": "^5.0.0",
-    "tsx": "^4.7.1"
+    "vite": "^5.0.0"
   }
 }
