@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <FpjsProvider
       loadOptions={{
-        apiKey: 'eko7Vk1lAmDxPWnt5757',
+        apiKey: import.meta.env.VITE_FINGERPRINT_API_KEY,
         region: 'eu',
       }}
     >
