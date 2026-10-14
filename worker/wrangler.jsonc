@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "sed-portfolio-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-06",
+  "routes": [
+    { "pattern": "api.sedanuryildiz.com", "custom_domain": true }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
