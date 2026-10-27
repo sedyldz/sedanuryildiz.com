@@ -13,15 +13,9 @@ export function About() {
           </div>
         </div>
         <div className="p-6 text-sm">
-          I'm a 3 times hackathon winner full stack developer with product
-          design background. I have more than 8 years experience delivering
-          complex systems and scalable solutions using modern technologies. At
-          Percona, I developed an observability tool to help database
-          administrators identify and solve issues like slow queries and high
-          CPU usage. As CTO of Knowy.ai, I led a team of 8 developers
-          to build a scalable MVP with advanced knowledge graphs. During six
-          years at a digital product studio, I delivered 10+ web and mobile
-          applications.
+        Full-stack developer and product designer with 10+ years of experience turning complex problems into intuitive, scalable products. My superpower is bridging product thinking, design, and engineering to bring clarity to ambiguity and turn ideas into products people love.
+
+Currently exploring the intersection of AI and software development, experimenting with agentic workflows and rethinking what it means to build software.
         </div>
       </main>
     </div>
