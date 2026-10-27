@@ -12,10 +12,22 @@ export function About() {
             <span>ME</span>
           </div>
         </div>
-        <div className="p-6 text-sm">
-        Full-stack developer and product designer with 10+ years of experience turning complex problems into intuitive, scalable products. My superpower is bridging product thinking, design, and engineering to bring clarity to ambiguity and turn ideas into products people love.
-
-Currently exploring the intersection of AI and software development, experimenting with agentic workflows and rethinking what it means to build software.
+        <div className="p-6 max-w-2xl space-y-6 text-sm leading-relaxed">
+          <p>
+            Full-stack developer and product designer with 10+ years of
+            experience turning complex problems into intuitive, scalable
+            products.
+          </p>
+          <p>
+            My superpower is bridging product thinking, design, and engineering
+            to bring clarity to ambiguity and turn ideas into products people
+            love.
+          </p>
+          <p>
+            Currently exploring the intersection of AI and software development,
+            experimenting with agentic workflows and rethinking what it means to
+            build software.
+          </p>
         </div>
       </main>
     </div>
